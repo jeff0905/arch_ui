@@ -1,0 +1,42 @@
+
+@import "./_variable.less";
+
+@surface: rgba(255, 255, 255, 1);
+@box-shadow:
+            0 3px 1px -2px rgba(0,0,0,.2),
+            0 2px 2px 0 rgba(0,0,0,.14),
+            0 1px 5px 0 rgba(0,0,0,.12);
+@on-surface: #29302e;
+@primary: #356859;
+@border-radius: 6px;
+@font-size: 12px;
+@round: 6dp;
+
+// divider line
+@divider-margin: 4px;
+
+.arch-menu {
+  min-width: @arch-menu-min-width;
+  max-width: @arch-menu-max-width;
+  background: @surface;
+  border-radius: @border-radius;
+  box-shadow:@box-shadow;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+  will-change: transform,opacity;
+  min-width: 120px;
+  margin: 4px 0;    
+  max-width: calc(100vw - 60px);
+  max-height: calc(100vh - 60px);
+  
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.2);
+  box-shadow: 0 1px 6px rgba(0,0,0,.2);
+  color: #606266;
+  .arch-list-divider {
+    margin: @divider-margin 0
+  }
+}
